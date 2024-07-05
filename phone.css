@@ -1,0 +1,246 @@
+:root {
+  --text-colors: #c0e2eab3;
+  --background-color: #a9a9a91f;
+  --invicible-color: #ffffff1a;
+  --iexperiment-color: #ffffff28;
+  --experiment-color: #9494948f;
+  --xperiment-color: #353333fc;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width:1400px) {
+  #Menu {
+    display: none;
+  }
+  nav1  {
+    display: none;
+  }
+}
+@media (max-width:1000px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background-color: var(--iexperiment-color) ;
+    backdrop-filter: blur(20px);
+    color:var(--text-colors) ;
+  }
+  .ham {
+    display: block;
+    margin-right: 10px;
+    height: 20px;
+  }
+  .car {
+    display: block;
+    color: var(--text-colors);
+    height: 0%;
+  }
+  nav {
+    display: none;
+  }
+  .car:hover {
+    border: none;
+  }
+  nav {
+    display: none;
+    height: fit-content;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 0;
+    background-color: var(--experiment-color);
+    backdrop-filter: blur(15px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px;
+    transition: 0.5s;
+  }
+  nav li {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+  }
+  .full {
+    margin: 0;
+  }
+  .about-img  {
+    display: none;
+  }
+  .about-text h1 {
+    color: var(--text-colors);
+    text-align: center;
+  }
+  .about-text hr {
+    align-self: center;
+    margin: 0 auto;
+  }
+  .about-text {
+    width: 1010%;
+  }
+  .skills {
+    display: none;
+  }
+   /* projects */
+   .projects-grid { 
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+.card:hover {
+  transform: scale(.9);
+}
+}
+@media (max-width: 750px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+  }
+  .ham {
+    display: block;
+    margin-right: 10px;
+  }
+  .car {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .car:hover {
+    border: none;
+  }
+ nav  {
+    display: none;
+    height: fit-content;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: var(--xperiment-color);
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px;
+    transition: 0.5s;
+  }
+  nav li {
+    display: block;
+    margin: 20px;
+    text-align: left;
+  }
+  /* header */
+  /* first-div */
+  .sector-img {
+    display: none;
+  }
+  .sector-text {
+    text-align: justify;
+    width: 100%;
+    padding: 5px;
+  }
+  /* about */
+  .about-img {
+    display: none;
+    width: 40%;
+    position: relative;
+  }
+  .about-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 ;
+    margin: 0;
+  }
+  .about-text h1 {
+    color: var(--text-colors);
+    text-align: center;
+  }
+  .about-text hr {
+    align-self: center;
+    margin: 0 auto;
+  }
+  /* services */
+  .service-grid:hover .grid-pag{
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    display: block;
+    height: fit-content;
+}
+  /* projects */
+  .projects-grid { 
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+}
+@media(max-width:500px) {
+  body {
+    padding: 0;
+    margin: 0;
+  } 
+  header {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background-color: var(--iexperiment-color) ;
+    color:var(--text-colors) ;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .about-text {
+    width: 100%;
+    text-align: left;
+  }
+  .about-text hr {
+    margin: 0px;
+  }
+  .full {
+    margin: 0;
+  }
+}
